@@ -2,9 +2,9 @@
 
 namespace MB\Core;
 
+use MB\Core\Commands\CoreCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use MB\Core\Commands\CoreCommand;
 
 class CoreServiceProvider extends PackageServiceProvider
 {
