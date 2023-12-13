@@ -19,13 +19,11 @@ class CoreServiceProvider extends PackageServiceProvider
             ->name('core');
 
         $this->publishes([
-            $this->package->basePath('/../.phpcs.xml') => ".phpcs.xml",
+            $this->package->basePath('/../.phpcs.xml') => '.phpcs.xml',
         ]);
-//            ->hasConfigFile()
-//            ->hasViews()
-//            ->hasMigration('create_core_table')
-//            ->hasCommand(CoreCommand::class);
+        //            ->hasConfigFile()
+        //            ->hasViews()
+        //            ->hasMigration('create_core_table')
+        //            ->hasCommand(CoreCommand::class);
     }
-
-
 }
