@@ -2,7 +2,6 @@
 
 namespace MB\Core;
 
-use MB\Core\Commands\CoreCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -19,8 +18,8 @@ class CoreServiceProvider extends PackageServiceProvider
             ->name('core');
 
         $this->publishes([
-            $this->package->basePath('/../dist/.phpcs.xml') => ".phpcs.xml",
-            $this->package->basePath('/../dist/phpstan.neon') => "phpstan.neon",
+            $this->package->basePath('/../dist/.phpcs.xml') => '.phpcs.xml',
+            $this->package->basePath('/../dist/phpstan.neon') => 'phpstan.neon',
         ]);
     }
 }
