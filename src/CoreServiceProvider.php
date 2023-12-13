@@ -16,10 +16,16 @@ class CoreServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('core')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_core_table')
-            ->hasCommand(CoreCommand::class);
+            ->name('core');
+
+        $this->publishes([
+            $this->package->basePath('/../.phpcs.xml') => ".phpcs.xml",
+        ]);
+//            ->hasConfigFile()
+//            ->hasViews()
+//            ->hasMigration('create_core_table')
+//            ->hasCommand(CoreCommand::class);
     }
+
+
 }
