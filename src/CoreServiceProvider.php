@@ -18,8 +18,8 @@ class CoreServiceProvider extends PackageServiceProvider
             ->name('core');
 
         $this->publishes([
-            $this->package->basePath('/../dist/.phpcs.xml') => '.phpcs.xml',
-            $this->package->basePath('/../dist/phpstan.neon') => 'phpstan.neon',
+            $this->package->basePath('/../.phpcs.xml') => '.phpcs.xml',
+            $this->package->basePath('/../phpstan.neon') => 'phpstan.neon',
         ]);
     }
 }
